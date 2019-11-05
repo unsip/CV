@@ -1,6 +1,6 @@
 # About
 
-My CV for job applications. In case you're HR is reading this, don't hesitate
+My CV for job applications. In case you're HR reading this, don't hesitate
 to hit me up.
 
 ## Note on rendering

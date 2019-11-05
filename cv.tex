@@ -3,6 +3,7 @@
 \usepackage{enumitem}
 \usepackage{unicode}
 \usepackage{hyperref}
+\usepackage{caption}
 
 \pagestyle{empty}
 \hypersetup{
@@ -24,23 +25,35 @@
 
 
 \begin{document}
-\begin{tabular}{p{.40\textwidth}rp{.40\textwidth}}
-    \bf{\LARGE{Andrey Turbov}} & & {\bf Contact} \\
-    & {\small Phone:} & {\small +7 (999) 215-6653 (mobile)} \\
-    & {\small E-mail:} & {\small unsip@protonmail.com} \\
+\begin{tabular}{@{}p{.50\textwidth}rp{.50\textwidth}}
+    \bf{\LARGE{Andrey Turbov} \newline{\small{Sep 5, 1996}}} & & {\bf Contact} \\
+    & {\small Phone:}       & {\small +7 (999) 215-6653} \\
+    & {\small E-mail:}      & {\small unsip@protonmail.com} \\
+    & {\small LinkedIn:}    & {\small \href{http://linkedin.com}{MyLinkedInName}}
 \end{tabular}
 
+%{\bf{\LARGE{Andrey Turbov} \small{Sep 5, 1996}}} \hfill {\bf Contact} \\
+%\begin{tabular}{ll}
+%    {\small Phone:}     & {\small +7 (999) 215-6653 (mobile)} \\
+%    {\small E-mail:}    & {\small unsip@protonmail.com} \\
+%    {\small LinkedIn:}  & {\small \href{http://linkedin.com}{MyLinkedInName}}
+%\end{tabular}
+
 \vspace{10mm}
-{\noindent I am novice in software development and interested in acquiring
-expertise in OOP, functional programming, linux hosts administration and
-maintainance, DevOps, scripting and automation of daily tasks. Usually, I spend
-most of my spare time on self-education through Computer Science courses (such
-as OSS), reading documentation and various manual pages to increase my
-understanding of the system. The most important job-aspect for me is to learn
-new things, as well as getting proficiency in solving challenging problems. I
-can easily read and understand technical English literature, just as
-understanding spoken language, so there is no problem for me to overtake
-job-specific material, which I am ready to dive in.
+{\noindent I am proficient software configuration manager and novice developer.
+    My wide interests lie between designing of complex infrastucture using best
+    DevOps practices, acquiring expertise in solving complex programming
+    problems by applying such paradigms and principles as OOP, SOLID,
+    functional programming, up to grasping on sophisticated philosophical
+    concepts and trying myself in audio-visual arts. I have spent a lot of time
+    on self-education through Computer Science courses (such as Open Source
+    Society University), daily usage of *nix systems and working on small pet
+    projects, so I am always passionate about learning new things and diving
+    into complex problems. I have read a lot of academic English literature and
+    worked in international company, it won't be a problem for me to get along
+    with foreign colleagues and customers. In my spare time I like to read on
+    humanities, learn programming, playing board games and contemplate on
+    aesthetically pleasing art.
 }
 
 \subsection*{Employment}
@@ -59,7 +72,7 @@ job-specific material, which I am ready to dive in.
 
 \subsection*{Education}
 \begin{table}[!h]
-    \begin{tabular}{p{0.20\textwidth}p{0.80\textwidth}}
+    \begin{tabular}{@{}p{0.20\textwidth}p{0.70\textwidth}}
         2014 --- 2016 & Saint Petersburg State University of Aerospace Instrumentation, Department of Computer Science \\
         2013 --- 2014 & Peter the Great Saint-Petersburg Polytechnic University, Department of Physics and Astronomy
     \end{tabular}
@@ -68,23 +81,35 @@ job-specific material, which I am ready to dive in.
 \subsection*{Skills}
 \begin{description}
     \item[Programming languages:]
-    Python, Ruby, C/C++, JavaScript.
-    \item[Frameworks and tools:]
-    Django, ReactJS, Webpack, Git.
-    \item[Administration utilities:]
-    {\noindent
-    Linux OS (RHEL, Debian, Arch, Gentoo), Ansible, shell scripting.
-    }
+    Python, C/C++(11/14/17), JavaScript (ES6), Ruby
+    \item[Operating systems:]
+    *nix derivatives (RHEL, Debian, Arch, Gentoo)
+    \item[WebDev frameworks:]
+    Django, Flask, ReactJS, Webpack, Bootstrap
+    \item[Version control and CI/CD:]
+    Git, Gitlab CI, Jenkins
+    \item[Monitoring:]
+    ELK stack, Grafana, Prometheus
+    \item[Containers and virtual machines:]
+    Docker, Vagrant, VirtualBox
+    \item[Infrastructure orchestration:]
+    Ansible, Puppet, Bolt
+    \item[Databases:]
+    MySQL, PostgreSQL, OracleDB
+    \item[Documentation:]
+    Markdown, Sphinx, Confluence, LaTeX
+    \item[Other tools:]
+    shell scripting (bash), core *nix utilities, Vim, Make, CMake
     \item[Languages:]
-    English intermediate, Russian native.
+    English upper-intermediate, Russian native
 \end{description}
 
 \subsection*{Other}
 \begin{description}
     \item[Achievements:]
-    participation in student physics and astronomy conferences/olympics.
+    participation in student physics and astronomy conferences/olympics
     \item[Hobbies:]
-        \href{https://github.com/unsip}{programming}, bike, reading scientific literature, spider keeping.
+    \href{https://github.com/unsip}{programming}, bike, philosophy, generative art, spider keeping
 \end{description}
 
 \end{document}
