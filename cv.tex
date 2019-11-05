@@ -1,0 +1,90 @@
+\documentclass[12pt]{report}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{unicode}
+\usepackage{hyperref}
+
+\pagestyle{empty}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+}
+\setlist[description]{leftmargin=*}
+\setlist[itemize]{leftmargin=*}
+
+% Job listing
+\newenvironment{JobDescription}[4]{
+    {\bf #1 } \hfill { #2}
+    \\
+    {\em #3 } \hfill {\em #4 }
+    \begin{itemize}
+} {
+    \end{itemize}
+}
+
+
+\begin{document}
+\begin{tabular}{p{.40\textwidth}rp{.40\textwidth}}
+    \bf{\LARGE{Andrey Turbov}} & & {\bf Contact} \\
+    & {\small Phone:} & {\small +7 (999) 215-6653 (mobile)} \\
+    & {\small E-mail:} & {\small unsip@protonmail.com} \\
+\end{tabular}
+
+\vspace{10mm}
+{\noindent I am novice in software development and interested in acquiring
+expertise in OOP, functional programming, linux hosts administration and
+maintainance, DevOps, scripting and automation of daily tasks. Usually, I spend
+most of my spare time on self-education through Computer Science courses (such
+as OSS), reading documentation and various manual pages to increase my
+understanding of the system. The most important job-aspect for me is to learn
+new things, as well as getting proficiency in solving challenging problems. I
+can easily read and understand technical English literature, just as
+understanding spoken language, so there is no problem for me to overtake
+job-specific material, which I am ready to dive in.
+}
+
+\subsection*{Employment}
+\begin{JobDescription}{T-Systems}{2018 --- Present}{Software Configuration Manager}{St. Petersburg}
+    \item Advanced from Intern to Middle position in less than a year
+    \item Implemented and maintained internal services and utilities such as:
+    \begin{itemize}
+        \item Custom dashboard for project environments using Python Flask and ReactJS
+        \item Webservice for generating delivery instructions for production OPS
+        \item CLI utility for complex application configuration management and validation
+    \end{itemize}
+    \item Designed and developed orchestration approach using Puppet and Puppet Bolt
+    \item Heavy legacy scripts maintainance and refactoring
+    \item Support for international development, QA and production OPS teams
+\end{JobDescription}
+
+\subsection*{Education}
+\begin{table}[!h]
+    \begin{tabular}{p{0.20\textwidth}p{0.80\textwidth}}
+        2014 --- 2016 & Saint Petersburg State University of Aerospace Instrumentation, Department of Computer Science \\
+        2013 --- 2014 & Peter the Great Saint-Petersburg Polytechnic University, Department of Physics and Astronomy
+    \end{tabular}
+\end{table}
+
+\subsection*{Skills}
+\begin{description}
+    \item[Programming languages:]
+    Python, Ruby, C/C++, JavaScript.
+    \item[Frameworks and tools:]
+    Django, ReactJS, Webpack, Git.
+    \item[Administration utilities:]
+    {\noindent
+    Linux OS (RHEL, Debian, Arch, Gentoo), Ansible, shell scripting.
+    }
+    \item[Languages:]
+    English intermediate, Russian native.
+\end{description}
+
+\subsection*{Other}
+\begin{description}
+    \item[Achievements:]
+    participation in student physics and astronomy conferences/olympics.
+    \item[Hobbies:]
+        \href{https://github.com/unsip}{programming}, bike, reading scientific literature, spider keeping.
+\end{description}
+
+\end{document}
