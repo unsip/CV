@@ -15,7 +15,7 @@
 
 % Job listing
 \newenvironment{JobDescription}[4]{
-    {\bf #1 } \hfill { #2}
+    {\bf #1 } \hfill { #2 }
     \\
     {\em #3 } \hfill {\em #4 }
     \begin{itemize}
@@ -34,28 +34,33 @@
 \end{tabular}
 
 \vspace{10mm}
-{\noindent I'm a software engineer with a few years of DevOps expertise.
+{\noindent I'm a DevOps engineer with a few years of software development expertise.
     Self-education is of the highest value for me, which I'm always striving.
     Not only because regular studies got me into the industry, but also because
     I appreciate scientific endeavour and enjoy exploring world of abstract
     ideas. Hence, I'm looking forward to further improve my skills in software
-    craftsmanship, giving my preference to interesting C++ and Python projects. The
-    essential job-aspect for me is to acquire expertise in solving challenging
-    problems using modern technologies and practices. My experience in an
-    international environment enables me to get along with foreign co-workers
-    and customers quickly. In my spare time, I enjoy studying humanities,
-    learning computer graphics, playing board games, and contemplating on
-    aesthetically pleasing art.
+    craftsmanship and DevOps practices. The essential job-aspect for me is to
+    acquire expertise in solving challenging problems using modern technologies
+    and cutting edge approaches. My experience in an international environment
+    enables me to get along with foreign co-workers and customers quickly.
+    In my spare time, I enjoy studying humanities, maintaining
+    \href{https://exherbo.org/}{Exherbo Linux} distribution,
+    playing board games, and contemplating on aesthetically pleasing art.
 }
 
 \subsection*{Employment}
-\begin{JobDescription}{T-Systems}{2020 --- present}{Software Developer}{St. Petersburg}
+\begin{JobDescription}{Teknavo}{2021 --- 2022}{DevOps Engineer}{St. Petersburg}
+    \item Internal Bloomberg CI/CD infrastructure maintainance
+    \item Build and testing automation with CMake and Python
+\end{JobDescription}
+%
+\begin{JobDescription}{T-Systems}{2020 --- 2021}{Software Developer}{St. Petersburg}
     \item Full stack maintainance and development of internal platform for executing and monitoring various bots
     \item Project architecture revision and design using UML diagrams
     \item Solution prototyping along with introduction of Python RPC framework
 \end{JobDescription}
-
-\begin{JobDescription}{}{2018 --- 2020}{Software Configuration Manager}{St. Petersburg}
+%
+\begin{JobDescription}{}{2018 --- 2020}{DevOps Engineer}{St. Petersburg}
     \item Regular presentations on international on-site meetings
     \item Implementation and maintainance of internal services and utilities such as:
     \begin{itemize}
@@ -81,15 +86,15 @@
 \subsection*{Used Tools}
 \begin{description}
     \item[Programming languages:]
-    Python, C++(11/14/17), JavaScript (ES6)
+    Python, C++(11/14/17), JavaScript
     \item[Frameworks:]
     Django, Flask, ReactJS, RPyC
     \item[Development utilities:]
     Git, Bash, core *nix utilities
     \item[Operating systems:]
-    Linux (RHEL, Debian, Arch, Gentoo)
+    Linux (RHEL, Debian, Arch, Gentoo, Exherbo)
     \item[Build systems and CI/CD:]
-    Make, CMake, Gitlab CI, Jenkins
+    Make, Ninja, CMake, Gitlab CI, Jenkins
     \item[Containers/Virtualization:]
     Docker, Vagrant, VirtualBox
     \item[Infrastructure orchestration:]
