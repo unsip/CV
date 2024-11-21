@@ -1,0 +1,156 @@
+\documentclass[10pt]{report}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[margin=30pt]{geometry}
+\usepackage{hyperref}
+\usepackage{unicode}
+
+\pagestyle{empty}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+}
+\setlist[description]{leftmargin=*}
+\setlist[itemize]{leftmargin=*}
+
+% Job listing
+\newenvironment{JobDescription}[5]{
+    \vspace{ #5 }
+    \flushleft
+    {\bf #1 } \hfill { #2 }
+    \\
+    {\em #3 } \hfill {\em #4 }
+    \begin{itemize}
+} {
+    \end{itemize}
+}
+
+\begin{document}
+\begin{tabular}{@{}p{.60\textwidth}rp{.35\textwidth}}
+    \bf{\LARGE{Andrey Turbov} \newline{\small{Sep 5, 1996}}} & & {\bf Contact} \\
+    & {\small LinkedIn:}    & {\small \href{https://linkedin.com/in/andrey-turbov-8a6a91196}{Andrey Turbov}} \\
+    & {\small E-mail:}      & {\small unsip@tuta.io} \\
+    & {\small Phone:}       & {\small +995 591812617} \\
+    & {\small Github:}      & {\small \href{https://github.com/unsip}{https://github.com/unsip}}
+\end{tabular}
+
+\vspace{5mm}
+{\noindent
+    I'm a software and operations engineer with a few years of SRE expertise. Self-education is of the highest value for
+    me, which I'm always striving. Not only because regular studies got me into the industry, but also because I
+    appreciate scientific endeavour and enjoy exploring world of abstract ideas. Hence, I'm looking forward to further
+    improve my skills in software development, architecture design and DevOps practices. The essential job-aspect for me
+    is to acquire expertise in solving challenging problems using modern technologies and cutting edge approaches. My
+    experience in an international environment enables me to get along with foreign co-workers and customers quickly.
+}
+
+\subsection*{Employment}
+\begin{JobDescription}{Freelance}{Jul 2023 --- Present}{Software Engineer}{Tbilisi}{2mm}
+    \item Developed initial platform prototype for automatic conversion/generation of \emph{CMake} files with
+        \emph{Django/DRF}
+    \item Implemented new platform features according to customer requirements regarding their build system improvements
+    \item \emph{Django/DRF/ReactJS} service for automated crypto infrastructure deployment to various cloud providers:
+    \begin{itemize}
+        \item Implementation of new features and bug reduction via legacy code refactoring
+        \item Introduced TDD and existing code coverage with \emph{pytest} + CI/CD pipelines configuration
+        \item Monitoring alerts configuration catching critical application issues such as stale deployments, queues
+            overflow, etc.
+    \end{itemize}
+\end{JobDescription}
+
+\begin{JobDescription}{JettyCloud (RingCentral)}{Dec 2022 --- Apr 2023}{Release Engineer}{Tbilisi}{2mm}
+    \item Design and maintain internal custom \emph{Python} toolchain for release routine such as mass services
+        deployment
+    \item Building and decommission of instances depending on a business needs
+    \item Carry out release preparation cycle including:
+    \begin{itemize}
+        \item Deployment of the whole RC distributed system
+        \item Tracing and resolving issues which occured during QA regression cycles
+        \item Bug reporting and discussion with developers on possible solutions
+    \end{itemize}
+\end{JobDescription}
+
+\begin{JobDescription}{}{Apr 2022 --- Dec 2022}{Site Reliability Engineer}{Tbilisi}{-3mm}
+    \item Deployment and configuration on production environments in a strict time frames
+    \item Subsystems support handover from other teams with complex review and presentation for peers
+    \item Tracing and resolving critical application issues in a complex production environment
+    \item Tight communication with international customers, operations and development teams to achieve system reliability
+    \item Deployment processes automation with \emph{Python} scripts
+\end{JobDescription}
+
+\begin{JobDescription}{Teknavo (Bloomberg)}{Dec 2021 --- Apr 2022}{DevOps Engineer}{St. Petersburg}{5mm}
+    \item Internal Bloomberg CI/CD infrastructure improvement to speed up build and release process
+    \item Build and testing automation with \emph{Python}, \emph{CMake}, \emph{GTest} and \emph{pytest}
+    \item \emph{C++} codebase tests coverage and bugfixing
+\end{JobDescription}
+
+\begin{JobDescription}{T-Systems (Deutsche Telekom)}{Jan 2020 --- Dec 2021}{Software Developer}{St. Petersburg}{0mm}
+    \item Design new system architecture for \emph{Python Django} RPA platform with UML
+    \item Refactoring of a legacy \emph{Django/DRF/Celery/Flask} backend according to new system design
+    \item Transition from RPC (\emph{RPyC}) protocol to plain REST API to simplify backend-agent communication
+    \item Implemented multiprocessing \emph{Python} RPA agent-side for easy bots management and concurrent execution
+    \item \emph{ReactJS} frontend development and improvements following strict company UI standards
+    \item Introduced TDD practice for both frontend and backend:
+    \begin{itemize}
+        \item Frontend unit-test configuration and coverage using \emph{Jest} and \emph{Enzyme}
+        \item Backend and agent unit-testing with \emph{pytest}, \emph{factory\_boy} for data mocking, \emph{pytest-cov}
+            for coverage metrics
+        \item Organized knowledge sharing sessions on how to properly unit-test components using \emph{pytest}
+        \item Paired programming sessions with colleagues to help with TDD adoption
+    \end{itemize}
+\end{JobDescription}
+
+\begin{JobDescription}{}{Jul 2018 --- Jan 2020}{DevOps Engineer}{St. Petersburg}{-3mm}
+    \item Monthly presentations on international on-site meetings
+    \item Support for international DEV, QA and SRE teams
+    \item Orchestration solution design and development using \emph{Puppet} and \emph{Puppet Bolt}
+    \item Migration of CI/CD pipelines from \emph{Jenkins} to \emph{GitLab CI}
+    \item Implementation and maintainance of internal services and utilities such as:
+    \begin{itemize}
+        \item \emph{Django/DRF/ReactJS} dashboard web service for project environments \item \emph{Flask} service for generating delivery instructions for production OPS \item \emph{Python} CLI utility for complex application configuration management
+    \end{itemize}
+\end{JobDescription}
+
+\subsection*{Education}
+\begin{table}[H]
+    \begin{tabular}{@{}p{0.15\textwidth}p{0.90\textwidth}}
+        2014 --- 2016 & Saint Petersburg State University of Aerospace Instrumentation, Department of Computer Science \\
+        2013 --- 2014 & Peter the Great Saint-Petersburg Polytechnic University, Department of Physics and Astronomy
+    \end{tabular}
+\end{table}
+
+\subsection*{Used Tools}
+\begin{description}
+    \item[Programming languages:]
+    Python, C++(11/14/17), JavaScript (ES6), Elixir, Groovy
+    \item[Frameworks:]
+    Django, Django REST Framework (DRF), Flask, Celery, RPyC, pytest, ReactJS, Jest/Enzyme, GTest
+    \item[Development utilities:]
+    Git, Bash, core *nix utilities, rpm, dpkg, Sphinx
+    \item[Operating systems:]
+    Linux (RHEL, Debian, Arch, Gentoo, Exherbo), Windows
+    \item[Build systems and CI/CD:]
+    Make, Ninja, CMake, Gitlab CI, Jenkins
+    \item[Containers/Cloud/Virtualization:]
+    Docker, k8s/Spinnaker, AWS, Vagrant, VirtualBox, VMware
+    \item[Infrastructure orchestration:]
+    Ansible, Puppet, Puppet Bolt, Terraform
+    \item[Monitoring:]
+    ELK stack, Grafana, Prometheus, Zabbix
+    \item[Databases:]
+    PostgreSQL, OracleDB, Amazon RDS
+\end{description}
+
+\subsection*{Other}
+\begin{description}
+    \item[Languages:]
+    advanced English, native Russian
+    \item[Achievements:]
+    participated in student physics and astronomy conferences/competitions,
+    completed \href{https://gsl.mit.edu/}{MIT GSL} program
+    \item[Hobbies:]
+    \href{https://github.com/unsip}{programming}, \href{https://exherbo.org/}{Exherbo Linux} distribution maintainance,
+        philosophy and humanity studies, digital art, spider keeping
+\end{description}
+
+\end{document}
