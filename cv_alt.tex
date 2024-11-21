@@ -1,0 +1,162 @@
+\documentclass[10pt]{report}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[margin=50pt]{geometry}
+\usepackage{hyperref}
+\usepackage{unicode}
+
+\pagestyle{empty}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+}
+\setlist[description]{leftmargin=*}
+\setlist[itemize]{leftmargin=*}
+
+% Job listing
+\newenvironment{JobDescription}[5]{
+    \vspace{ #5 }
+    \flushleft
+    {\bf #1 } \hfill { #2 }
+    \\
+    {\em #3 } \hfill {\em #4 }
+} {
+    \end{itemize}
+}
+
+\begin{document}
+\begin{tabular}{@{}p{.60\textwidth}rp{.35\textwidth}}
+    \bf{\LARGE{Andrey Turbov} \newline{\small{Sep 5, 1996}}} & & {\bf Contact} \\
+    & {\small LinkedIn:}    & {\small \href{https://linkedin.com/in/andrey-turbov-8a6a91196}{Andrey Turbov}} \\
+    & {\small E-mail:}      & {\small unsip@tuta.io} \\
+    & {\small Phone:}       & {\small +9 955 91812617} \\
+    & {\small Github:}      & {\small \href{https://github.com/unsip}{https://github.com/unsip}}
+\end{tabular}
+
+\vspace{10mm}
+{\noindent I'm an operations engineer with a few years of software development expertise.
+    Self-education is of the highest value for me, which I'm always striving.
+    Not only because regular studies got me into the industry, but also because
+    I appreciate scientific endeavour and enjoy exploring world of abstract
+    ideas. Hence, I'm looking forward to further improve my skills in software
+    architecture, infrastructure design and DevOps practices.
+    \newline
+    \newline
+    The essential job-aspect for me is to
+    acquire expertise in solving challenging problems using modern technologies
+    and cutting edge approaches. My experience in an international environment
+    enables me to get along with foreign co-workers and customers quickly.
+    In my spare time, I enjoy studying humanities, maintaining
+    \href{https://exherbo.org/}{Exherbo Linux} distribution,
+    playing board games, and contemplating on aesthetically pleasing art.
+}
+\vspace{5mm}
+
+\subsection*{Employment}
+\begin{JobDescription}{JettyCloud (RingCentral)}{Dec 2022 --- Apr 2023}{Release Engineer}{Tbilisi}{2mm}
+    \item Design and maintain internal toolchain for daily operations
+    \item Building and decommission of instances depending on a business needs
+    \item Carry out release preparation cycle including:
+    \begin{itemize}
+        \item Stage environments configuration for further testing process
+        \item Deployment of the whole RC distributed system
+        \item Support QA regression cycles
+        \item Tracing and resolving issues which occured during testing process
+        \item Bug reporting and discussion with developers on possible solutions
+    \end{itemize}
+\end{JobDescription}
+
+%Skills: Python, Gitlab CI, Jenkins, Puppet, ELK, Zabbix, Grafana, RHEL/Debian, k8s/Spinnaker, VMware
+
+\begin{JobDescription}{}{Apr 2022 --- Dec 2022}{Site Reliability Engineer}{Tbilisi}{-3mm}
+    \item Deployment and configuration on production environments in a strict time frames
+    \item Subsystems support handover from other teams with complex review and
+          presentation for peers
+    \item Tracing and resolving critical application issues in a complex
+          production environment
+    \item Ensuring that all production changes are made according to strict
+          explicit policy
+    \item Tight communication with other operations and development teams
+          to achieve system reliability
+\end{JobDescription}
+
+%Skills Python, Gitlab CI, Jenkins, Puppet, ELK, Zabbix, Grafana, RHEL/Debian, k8s/Spinnaker, AWS, VMware
+
+\begin{JobDescription}{Teknavo (Bloomberg)}{Dec 2021 --- Apr 2022}{DevOps Engineer}{St. Petersburg}{5mm}
+    \item Internal Bloomberg CI/CD infrastructure maintainance
+    \item Build and testing automation with CMake and Python
+\end{JobDescription}
+
+%Skills: Python, C++(11/14/17), bash, RHEL, Make, Ninja, CMake, Gitlab CI, Jenkins
+
+\goodbreak
+
+\begin{JobDescription}{T-Systems (Deutsche Telekom)}{Jan 2020 --- Dec 2021}{Software Developer}{St. Petersburg}{0mm}
+    \item Full stack maintainance and development of internal platform for executing and monitoring various bots
+    \item Project architecture revision and design using UML diagrams
+    \item Solution prototyping along with introduction of Python RPC framework
+\end{JobDescription}
+%Skills: Python, Django, Flask, ReactJS, RPyC, bash, Gitlab CI, k8s, Docker
+
+\begin{JobDescription}{}{Jul 2018 --- Jan 2020}{DevOps Engineer}{St. Petersburg}{-3mm}
+    \item Regular presentations on international on-site meetings
+    \item Orchestration solution design and development using Puppet and Puppet Bolt
+    \item Legacy CI/CD infrastucture maintainance and refactoring
+    \item Support for international DEV, QA and production OPS teams
+    \item Implementation and maintainance of internal services and utilities such as:
+    \begin{itemize}
+        \item Custom dashboard web service for project environments
+        \item Web service for generating delivery instructions for production OPS
+        \item CLI utility for complex application configuration management
+    \end{itemize}
+\end{JobDescription}
+% Skills: Python, Flask, ReactJS, RHEL/Debian, Ansible, Puppet/Bolt, ELK, Grafana, Prometheus, Docker, Vagrant, VirtualBox
+
+\vspace{5mm}
+
+\subsection*{Education}
+\begin{table}[H]
+    \begin{tabular}{@{}p{0.20\textwidth}p{0.70\textwidth}}
+        2014 --- 2016 & Saint Petersburg State University of Aerospace Instrumentation, Department of Computer Science \\
+        2013 --- 2014 & Peter the Great Saint-Petersburg Polytechnic University, Department of Physics and Astronomy
+    \end{tabular}
+\end{table}
+
+\goodbreak
+
+\subsection*{Used Tools}
+\begin{description}
+    \item[Programming languages:]
+    Python, C++(11/14/17), JavaScript
+    \item[Frameworks:]
+    Django, Flask, ReactJS, RPyC
+    \item[Development utilities:]
+    Git, Bash, core *nix utilities
+    \item[Operating systems:]
+    Linux (RHEL, Debian, Arch, Gentoo, Exherbo)
+    \item[Build systems and CI/CD:]
+    Make, Ninja, CMake, Gitlab CI, Jenkins
+    \item[Containers/Virtualization:]
+    Docker, Vagrant, VirtualBox, VMware
+    \item[Infrastructure orchestration:]
+    Ansible, Puppet, Bolt
+    \item[Monitoring:]
+    ELK stack, Grafana, Prometheus, Zabbix
+    \item[Webservers:]
+    Nginx, Apache
+    \item[Databases:]
+    PostgreSQL, OracleDB, Amazon RDS
+\end{description}
+
+\subsection*{Other}
+\begin{description}
+    \item[Languages:]
+    advanced English, native Russian
+    \item[Achievements:]
+    participated in student physics and astronomy conferences/competitions,
+    completed \href{https://gsl.mit.edu/}{MIT GSL} program at ITMO university
+    \item[Hobbies:]
+    \href{https://github.com/unsip}{programming}, philosophy, generative art, spider keeping
+\end{description}
+
+\end{document}
