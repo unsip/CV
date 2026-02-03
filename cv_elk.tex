@@ -27,7 +27,7 @@
 
 \begin{document}
 \begin{tabular}{@{}p{.60\textwidth}rp{.35\textwidth}}
-    \bf{\LARGE{Andrey Turbov} \newline{\small{Software Engineer | DevOps | SRE | 7 years}}} & & {\bf Contact} \\
+    \bf{\LARGE{Andrey Turbov} \newline{\small{Software Engineer | DevOps | SRE | 6 years}}} & & {\bf Contact} \\
     & {\small LinkedIn:}    & {\small \href{https://linkedin.com/in/andrey-turbov-8a6a91196}{Andrey Turbov}} \\
     & {\small E-mail:}      & {\small unsip@tuta.io} \\
     & {\small Phone:}       & {\small +995 591812617} \\
@@ -48,20 +48,7 @@
 }
 
 \subsection*{Employment}
-\begin{JobDescription}{EPAM Systems}{Apr 2025 --- Present}{Site Reliability Engineer}{Tbilisi}{2mm}
-    \item Designed architecture for the high-load \emph{Elastic Search} cluster from ground up
-    \item Developed specification and enforced company-wide observability standards for logging, monitoring and alerting
-    \item Built, maintained and optimized observability data pipeline infrastructure:
-    \begin{itemize}
-        \item Support for 1000+ different services spread between ~15 AWS accounts (\emph{EC2}, \emph{ECS}, \emph{EKS})
-        \item Total daily data throughput around \emph{10-40 TB}
-        \item Lead services migration proccess from legacy sources
-        \item Release and maintainance of \emph{AWS Lambda} extension to scrape data from custom functions
-    \end{itemize}
-    \item Mentored team adoption of an industry grade development and incident management practices
-\end{JobDescription}
-
-\begin{JobDescription}{C2C (Cmakify, GatewayFM)}{Jul 2023 --- Apr 2025}{Software Engineer}{Tbilisi}{2mm}
+\begin{JobDescription}{C2C (Cmakify, GatewayFM)}{Jul 2023 --- Present}{Software Engineer}{Tbilisi}{2mm}
     \item Developed initial platform prototype for automatic conversion/generation of \emph{CMake} files with
         \emph{Django/DRF}
     \begin{itemize}
@@ -72,7 +59,8 @@
     \begin{itemize}
         \item Implementation of new features and bug reduction via legacy code refactoring
         \item Introduced TDD and existing code coverage with \emph{pytest} + CI/CD pipelines configuration
-        \item Monitoring alerts configuration catching critical application issues such as stale deployments, queues
+        \item Setting up \emph{ELK} for newly created environments
+        \item \emph{AlertManager} configuration for catching critical application issues such as stale deployments, queues
             overflow, etc.
     \end{itemize}
 \end{JobDescription}
@@ -83,30 +71,49 @@
     \item Carry out release preparation cycle including:
     \begin{itemize}
         \item Deployed \emph{minor (120-150 services)} and \emph{major (more than 150 services)} releases of RC distributed system
-        \item Traced and resolved issues occurred during QA regression cycles
+        \item Traced and resolved issues occurred during QA regression cycles using \emph{ELK} and \emph{Zabbix}
         \item Bug reporting and collaboration with developers on potential solutions and patches
     \end{itemize}
 \end{JobDescription}
 
-\goodbreak
-
 \begin{JobDescription}{}{Apr 2022 --- Dec 2022}{Site Reliability Engineer}{Tbilisi}{-3mm}
     \item Delivery and configuration on high-load microservice production environment with over 30000 servers and instances
     \item Conducted subsystems support handover from other teams with detailed review and presentation for peers
-    \item Traced and resolved service critical routing issues and telecommunication failures with further RCA
+    \item Traced and resolved service critical routing issues and telecommunication failures with further RCA using \emph{ELK}
+    \item Collaborated closely with international customers, operations and development teams to achieve 99.999\% system reliability
     \item Deployment processes automation with \emph{Python} toolset
 \end{JobDescription}
 
+\begin{JobDescription}{Teknavo (Bloomberg)}{Dec 2021 --- Apr 2022}{DevOps Engineer}{St. Petersburg}{5mm}
+    \item Improved internal Bloomberg CI/CD infrastructure to accelerate build and release processes
+    \item Build and unit/integration tests automation with \emph{Python}, \emph{CMake}, \emph{GTest} and \emph{pytest}
+    \item Enhanced test coverage and resolved bugs in \emph{C++} codebase
+\end{JobDescription}
+
+\goodbreak
+
 \begin{JobDescription}{T-Systems (Deutsche Telekom)}{Jan 2020 --- Dec 2021}{Software Developer}{St. Petersburg}{0mm}
     \item Design new system architecture for \emph{Python Django} RPA platform with UML
+    \item Setting up monitoring with \emph{Grafana}, \emph{Prometheus} and \emph{ELK}
     \item Refactoring of a legacy \emph{Django/DRF/Celery/Flask} backend according to new system design
+    \item Transition from RPC (\emph{RPyC}) protocol to plain REST API to simplify backend-agent communication
     \item Implemented multiprocessing \emph{Python} RPA agent-side for easy bots management and concurrent execution
     \item \emph{ReactJS} frontend development and improvements following strict company UI standards
+    \item Introduced TDD practice for both frontend and backend:
+    \begin{itemize}
+        \item Frontend unit-test configuration and coverage using \emph{Jest} and \emph{Enzyme}
+        \item Backend and agent unit-testing with \emph{pytest}, \emph{factory\_boy} for data mocking, \emph{pytest-cov}
+            for coverage metrics
+        \item Organized knowledge sharing sessions on how to properly unit-test components using \emph{pytest}
+        \item Paired programming sessions with colleagues to help with TDD adoption
+    \end{itemize}
 \end{JobDescription}
 
 \begin{JobDescription}{}{Jul 2018 --- Jan 2020}{DevOps Engineer}{St. Petersburg}{-3mm}
+    \item Configured \emph{Prometheus} and \emph{ELK} for project monitoring from scratch
     \item Provided support to international Development, Quality Assurance, and Site Reliability Engineering teams throughout the software development process
     \item Orchestration solution design and development using \emph{Puppet} and \emph{Puppet Bolt} with twice as fast deployment speed
+    \item Led the migration of CI/CD pipelines from \emph{Jenkins} to \emph{GitLab CI}
     \item Implemented internal services and utilities including:
     \begin{itemize}
         \item \emph{Django/DRF/ReactJS} dashboard web service for project environments
@@ -132,15 +139,15 @@
     \item[Development utilities:]
     Git, Bash, core *nix utilities, rpm, dpkg, Sphinx
     \item[Operating systems:]
-    Linux (RHEL, Debian, Arch, Gentoo, Exherbo, NixOS, Guix), Windows
+    Linux (RHEL, Debian, Arch, Gentoo, Exherbo, NixOS), Windows
     \item[Build systems and CI/CD:]
     Make, Ninja, CMake, Gitlab CI, Github Actions, Jenkins
     \item[Cloud and Virtualization:]
-    Docker, k8s/Spinnaker, AWS (EC2, ECS, EKS, MSK, Lambda), Vagrant, VirtualBox, VMware
+    Docker, k8s/Spinnaker, AWS, Vagrant, VirtualBox, VMware
     \item[Infrastructure orchestration:]
-    Ansible, Puppet, Puppet Bolt, Terraform, Terragrunt
+    Ansible, Puppet, Puppet Bolt, Terraform
     \item[Monitoring:]
-    ELK, Vector, Grafana, Prometheus/Victoria Metrics, Zabbix
+    ELK stack, Grafana, Prometheus, Zabbix
     \item[Databases and Message Brokers:]
     PostgreSQL, OracleDB, Amazon RDS, Apache Kafka, RabbitMQ, Redis
 \end{description}
